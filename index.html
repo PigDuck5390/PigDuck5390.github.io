@@ -52,7 +52,7 @@
     @keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
     .hero-name{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(38px,4.5vw,60px);line-height:1.05;letter-spacing:-2px;margin-bottom:4px}
     .hero-name-en{font-family:'Syne',sans-serif;font-weight:600;font-size:clamp(20px,2.2vw,28px);color:var(--blue);letter-spacing:-.5px;margin-bottom:18px}
-    .hero-desc{font-size:15px;color:var(--muted);line-height:1.85;margin-bottom:26px;max-width:450px}
+    .hero-desc{font-size:15px;color:var(--muted);line-height:1.85;margin-bottom:26px;max-width:460px;word-break:keep-all;overflow-wrap:break-word}
     .hero-desc strong{color:var(--text);font-weight:700}
     .hero-btns{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}
     .btn{display:inline-flex;align-items:center;gap:7px;padding:10px 20px;border-radius:9px;font-family:'JetBrains Mono',monospace;font-size:12px;text-decoration:none;transition:all .2s;font-weight:500}
@@ -70,9 +70,9 @@
     .sec-title{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(24px,3vw,34px);letter-spacing:-1px;margin-bottom:36px}
 
     .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
-    .about-text{font-size:14.5px;color:var(--muted);line-height:1.9}
+    .about-text{font-size:14.5px;color:var(--muted);line-height:1.9;word-break:keep-all;overflow-wrap:break-word}
     .about-text strong{color:var(--text);font-weight:700}
-    .about-text p+p{margin-top:12px}
+    .about-text p+p{margin-top:12px}.about-text p{word-break:keep-all;overflow-wrap:break-word}
     .irows{display:grid;gap:7px}
     .irow{display:flex;justify-content:space-between;align-items:center;padding:10px 16px;background:var(--sky);border:1px solid var(--border);border-radius:9px;transition:border-color .2s}
     .irow:hover{border-color:var(--blue)}
@@ -80,14 +80,14 @@
     .ival{font-size:13px;color:var(--text);font-weight:500}
     .ival a{color:var(--blue);text-decoration:none}
 
-    .val-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .val-card{background:var(--white);border:1.5px solid var(--border);border-radius:14px;padding:24px 20px;transition:all .25s;position:relative;overflow:hidden}
+    .val-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:start}
+    .val-card{background:var(--white);border:1.5px solid var(--border);border-radius:14px;padding:24px 22px;transition:all .25s;position:relative;overflow:hidden}
     .val-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--vc,var(--blue));transform:scaleX(0);transition:transform .3s;transform-origin:left}
     .val-card:hover{transform:translateY(-4px);box-shadow:var(--sh)}
     .val-card:hover::after{transform:scaleX(1)}
     .val-num{font-family:'Syne',sans-serif;font-size:36px;font-weight:800;color:var(--border);line-height:1;margin-bottom:12px;letter-spacing:-2px}
     .val-title{font-family:'Syne',sans-serif;font-size:16px;font-weight:700;margin-bottom:8px}
-    .val-desc{font-size:13px;color:var(--muted);line-height:1.75}
+    .val-desc{font-size:13.5px;color:var(--muted);line-height:1.8;word-break:keep-all;overflow-wrap:break-word}
 
     /* ── SKILLS — 카테고리 탭 + 뱃지 ── */
     .skill-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
@@ -176,8 +176,8 @@
 
     .proj-front-body{padding:18px 20px}
     .proj-name{font-family:'Syne',sans-serif;font-size:18px;font-weight:800;letter-spacing:-.5px;margin-bottom:3px}
-    .proj-tagline{font-size:12px;color:var(--muted);margin-bottom:10px}
-    .proj-summary{font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:10px}
+    .proj-tagline{font-size:12px;color:var(--muted);margin-bottom:10px;word-break:keep-all}
+    .proj-summary{font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:10px;word-break:keep-all;overflow-wrap:break-word}
     .proj-stack-mini{display:flex;flex-wrap:wrap;gap:4px}
     .chip-mini{padding:2px 8px;border-radius:100px;font-family:'JetBrains Mono',monospace;font-size:10px;background:var(--blue-lt);color:var(--blue);border:1px solid var(--border)}
     .chip-mini.ora{background:var(--orange-bg);color:var(--orange);border-color:#fdd8b4}
@@ -200,7 +200,7 @@
     .back-section{margin-bottom:12px}
     .back-sec-title{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--blue);letter-spacing:1px;margin-bottom:7px;font-weight:700}
     .feat-list{list-style:none;display:flex;flex-direction:column;gap:4px}
-    .feat-list li{display:flex;align-items:flex-start;gap:6px;font-size:12px;color:var(--muted);line-height:1.55}
+    .feat-list li{display:flex;align-items:flex-start;gap:6px;font-size:12px;color:var(--muted);line-height:1.55;word-break:keep-all}
     .feat-list li::before{content:'→';color:var(--blue);font-weight:700;flex-shrink:0;margin-top:1px}
     .back-stack{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:12px}
     .proj-links{display:flex;gap:6px;flex-wrap:wrap}
@@ -217,12 +217,12 @@
     .tl-item:last-child{border-bottom:none}
     .tl-item:hover .tl-t{color:var(--blue)}
     .tl-d{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--dim);padding-top:2px}
-    .tl-t{font-size:13px;color:var(--text);font-weight:500;transition:color .2s}
+    .tl-t{font-size:13px;color:var(--text);font-weight:500;transition:color .2s;word-break:keep-all}
     .tl-b{font-size:10px;color:var(--green);font-family:'JetBrains Mono',monospace;margin-top:2px}
     .cert-list{display:grid;gap:8px}
     .cert-item{background:var(--sky);border:1.5px solid var(--border);border-radius:9px;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;transition:border-color .2s}
     .cert-item:hover{border-color:var(--green)}
-    .cert-name{font-size:13px;color:var(--text);font-weight:500}
+    .cert-name{font-size:13px;color:var(--text);font-weight:500;word-break:keep-all}
     .cert-date{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--green);font-weight:700}
 
     #contact{background:linear-gradient(150deg,var(--blue) 0%,var(--blue-dk) 100%);padding:76px 0;text-align:center;position:relative;z-index:1}
@@ -288,18 +288,18 @@
       <div class="hero-badge">BACKEND DEVELOPER</div>
       <h1 class="hero-name">김 찬</h1>
       <div class="hero-name-en">Kim Chan</div>
-      <p class="hero-desc">시스템이 어떻게 연결되는지 이해하고, 문제를 끝까지 해결하는 백엔드 개발자입니다.<br><strong>Java · Python · Spring Boot · FastAPI</strong>를 주력으로 데이터 흐름과 서버 구조 설계를 즐깁니다.</p>
+      <p class="hero-desc">시스템이 어떻게 연결되는지 이해하고, 문제를 끝까지 해결하는 백엔드 개발자입니다. <strong>Java · Python · Spring Boot · FastAPI</strong>를 주력으로 데이터 흐름과 서버 구조 설계를 즐깁니다.</p>
       <div class="hero-btns">
         <a class="btn btn-primary" href="https://github.com/PigDuck5390" target="_blank">
           <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
           GitHub
         </a>
-        <a class="btn btn-ghost" href="mailto:rlacks5390@naver.com">
+        <a class="btn btn-ghost" href="/cdn-cgi/l/email-protection#7f0d131e1c140c4a4c464f3f111e091a0d511c1012">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           이메일
         </a>
       </div>
-      <div class="hc-row"><div class="hc-ic">📧</div><span>rlacks5390@naver.com</span></div>
+      <div class="hc-row"><div class="hc-ic">📧</div><span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="70021c11131b0345434940301e110615025e131f1d">[email&#160;protected]</a></span></div>
       <div class="hc-row"><div class="hc-ic">📱</div><span>010-5390-2324</span></div>
       <div class="hc-row"><div class="hc-ic">📍</div><span>경기 화성시 동탄</span></div>
     </div>
@@ -320,7 +320,7 @@
       <div class="irows">
         <div class="irow"><span class="ikey">NAME</span><span class="ival">김찬 (Kim Chan)</span></div>
         <div class="irow"><span class="ikey">LOCATION</span><span class="ival">경기 화성시 동탄</span></div>
-        <div class="irow"><span class="ikey">EMAIL</span><span class="ival"><a href="mailto:rlacks5390@naver.com">rlacks5390@naver.com</a></span></div>
+        <div class="irow"><span class="ikey">EMAIL</span><span class="ival"><a href="/cdn-cgi/l/email-protection#17657b76747c6422242e275779766172653974787a"><span class="__cf_email__" data-cfemail="55273934363e2660666c65153b342330277b363a38">[email&#160;protected]</span></a></span></div>
         <div class="irow"><span class="ikey">PHONE</span><span class="ival">010-5390-2324</span></div>
         <div class="irow"><span class="ikey">GITHUB</span><span class="ival"><a href="https://github.com/PigDuck5390" target="_blank">@PigDuck5390</a></span></div>
         <div class="irow"><span class="ikey">EDUCATION</span><span class="ival">백석대학교 정보보호학과 졸업</span></div>
@@ -357,12 +357,12 @@
     <h2 class="sec-title">Tech Stack</h2>
     <div class="reveal">
       <div class="skill-tabs">
-        <button class="skill-tab active" onclick="switchTab(this,'all')">🗂 전체</button>
-        <button class="skill-tab" onclick="switchTab(this,'lang')">💻 언어</button>
-        <button class="skill-tab" onclick="switchTab(this,'fw')">⚙️ 프레임워크</button>
-        <button class="skill-tab" onclick="switchTab(this,'db')">🗄️ 데이터베이스</button>
-        <button class="skill-tab" onclick="switchTab(this,'tool')">🔧 개발툴</button>
-        <button class="skill-tab" onclick="switchTab(this,'ai')">🤖 AI / Vision</button>
+        <button class="skill-tab active" onclick="switchTab(this,'all')">전체</button>
+        <button class="skill-tab" onclick="switchTab(this,'lang')">언어</button>
+        <button class="skill-tab" onclick="switchTab(this,'fw')">프레임워크</button>
+        <button class="skill-tab" onclick="switchTab(this,'db')">데이터베이스</button>
+        <button class="skill-tab" onclick="switchTab(this,'tool')">개발툴</button>
+        <button class="skill-tab" onclick="switchTab(this,'ai')">AI / Vision</button>
       </div>
 
       <!-- 전체 -->
@@ -373,6 +373,8 @@
             <span class="tech-badge t-python">Python</span>
             <span class="tech-badge t-java">Java</span>
             <span class="tech-badge t-js">JavaScript</span>
+            <span class="tech-badge t-html">HTML5</span>
+            <span class="tech-badge t-css">CSS3</span>
           </div>
         </div>
         <div class="skill-section">
@@ -403,6 +405,7 @@
             <span class="tech-badge t-android">Android Studio</span>
             <span class="tech-badge t-intellij">IntelliJ</span>
             <span class="tech-badge t-sts">STS</span>
+            <span class="tech-badge t-git">Git</span>
             <span class="tech-badge t-github">GitHub</span>
             <span class="tech-badge t-figma">Figma</span>
             <span class="tech-badge t-dbeaver">DBeaver</span>
@@ -430,6 +433,8 @@
           <span class="tech-badge t-python">Python</span>
           <span class="tech-badge t-java">Java</span>
           <span class="tech-badge t-js">JavaScript</span>
+          <span class="tech-badge t-html">HTML5</span>
+          <span class="tech-badge t-css">CSS3</span>
         </div>
       </div>
 
@@ -463,6 +468,7 @@
           <span class="tech-badge t-android">Android Studio</span>
           <span class="tech-badge t-intellij">IntelliJ</span>
           <span class="tech-badge t-sts">STS</span>
+          <span class="tech-badge t-git">Git</span>
           <span class="tech-badge t-github">GitHub</span>
           <span class="tech-badge t-figma">Figma</span>
           <span class="tech-badge t-dbeaver">DBeaver</span>
@@ -615,7 +621,6 @@
                 <a class="plink" href="https://github.com/PigDuck5390/MovieLog.git" target="_blank" onclick="event.stopPropagation()">
                   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>GitHub
                 </a>
-                <a class="plink" href="https://www.notion.so/MovieLog-309fa719debc80ac9ca3f7f0dbb0cc2a?source=copy_link" target="_blank" onclick="event.stopPropagation()">Notion 문서</a>
               </div>
             </div>
           </div>
@@ -698,7 +703,7 @@
               <div class="proj-tagline">카페 통합 관리 ERP 시스템</div>
               <div class="proj-summary">제품·재고·인사·주문·재무·수익분석 등 카페 운영 전반을 통합 관리하는 ERP 웹 시스템.</div>
               <div class="proj-stack-mini">
-                <span class="chip-mini coming">🔧 상세 내용 준비 중</span>
+                <span class="chip-mini coming">상세 내용 준비 중</span>
               </div>
             </div>
           </div>
@@ -769,7 +774,7 @@
     <h2 class="sec-title">함께 만들어요 👋</h2>
     <p class="contact-sub">함께 만들고 싶은 서비스가 있다면, 언제든지 연락해주세요!</p>
     <div class="cc-grid reveal">
-      <a class="cc" href="mailto:rlacks5390@naver.com"><div class="ico">📧</div><div class="lbl">EMAIL</div><div class="val">rlacks5390@naver.com</div></a>
+      <a class="cc" href="/cdn-cgi/l/email-protection#aad8c6cbc9c1d99f99939aeac4cbdccfd884c9c5c7"><div class="ico">📧</div><div class="lbl">EMAIL</div><div class="val"><span class="__cf_email__" data-cfemail="ccbea0adafa7bff9fff5fc8ca2adbaa9bee2afa3a1">[email&#160;protected]</span></div></a>
       <a class="cc" href="tel:010-5390-2324"><div class="ico">📱</div><div class="lbl">PHONE</div><div class="val">010-5390-2324</div></a>
       <a class="cc" href="https://github.com/PigDuck5390" target="_blank"><div class="ico">🐱</div><div class="lbl">GITHUB</div><div class="val">@PigDuck5390</div></a>
     </div>
@@ -778,20 +783,6 @@
 
 <footer>© 2026 Kim Chan · Backend Developer · Built with HTML/CSS · Hosted on GitHub Pages</footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // Scroll reveal
-  const obs = new IntersectionObserver(entries => {
-    entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('in'); });
-  }, {threshold:.08});
-  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
-
-  // Skill tab switch
-  function switchTab(btn, panel) {
-    document.querySelectorAll('.skill-tab').forEach(t => t.classList.remove('active'));
-    document.querySelectorAll('.skill-panel').forEach(p => p.classList.remove('active'));
-    btn.classList.add('active');
-    document.getElementById('panel-' + panel).classList.add('active');
-  }
-</script>
-</body>
-</html>
+  const obs = new IntersectionObserver(entries =>
